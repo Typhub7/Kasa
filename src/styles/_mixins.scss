@@ -1,0 +1,14 @@
+/*Border radius*/
+@mixin rounded-border-large{
+    border-radius: 25px;
+}
+
+@mixin rounded-border-medium {
+    border-radius: 10px;
+}
+
+@mixin rounded-border-small {
+    border-radius: 5px;
+}
+
+
