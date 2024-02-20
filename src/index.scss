@@ -1,7 +1,9 @@
-@import "./styles/styles";
-@import "./styles/settings";
-@import "./styles/mixins";
+@import "./styles/_settings";
+@import "./styles/_mixins";
 
-@import "../components/Footer";
-@import "../components/Header";
+@import "./components/Footer/footer";
+@import "./components/Navigation/navigation";
+@import "./components/Header/header";
+@import "./components/Banner/banner";
+
 

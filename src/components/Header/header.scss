@@ -1,0 +1,19 @@
+.header {
+	max-width: 1240px;
+	margin: 45px auto 50px;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	@media screen and (max-width: $breakpoint) {
+		min-width: 320px;
+		margin-top: 20px;
+		margin-bottom: 27px;
+	}
+	.logo {
+	width: 210px;
+	@media screen and (max-width: $breakpoint) {
+		width: 145px;
+	}
+	}
+}

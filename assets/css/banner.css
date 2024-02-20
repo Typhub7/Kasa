@@ -1,0 +1,9 @@
+.banner_container {
+  max-width: 1240px;
+  min-width: 750px;
+  height: 233px;
+}
+.banner_container .banner_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=banner.css.map */

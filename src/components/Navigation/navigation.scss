@@ -1,0 +1,35 @@
+.navigation {
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .link-accueil,
+	.link-apropos {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: right;
+		padding-left: 3.5rem;
+		color: black;
+
+
+		@media screen and (max-width: $breakpoint) {
+		font-size: 12px ;
+		padding-left: 0.8rem;
+        text-transform: uppercase;
+		}
+
+		&:hover,
+		&:focus {
+			text-decoration-line: underline;
+		}
+
+	}
+}
+
+
+
