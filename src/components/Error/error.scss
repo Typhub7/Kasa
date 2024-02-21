@@ -1,0 +1,37 @@
+.error {
+    height: 1173px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: $breakpoint) {
+        height: 879px;
+    }
+    .error-number {
+        color: $primary-color;
+        font-size: 288px;
+        margin: 0;
+        @media screen and (max-width: $breakpoint) {
+            font-size: 96px;
+        }
+
+    }
+    .error-text {
+        color: $primary-color;
+        font-size: 36px;
+        margin: 0;
+        @media screen and (max-width: 900px) {
+            font-size: 24px;
+            width: 290px;
+        }
+        @media screen and (max-width: $breakpoint) {
+            font-size: 18px;
+            width: 260px;
+        }
+
+    }
+    .link {
+    text-decoration: underline;
+    }
+    
+}

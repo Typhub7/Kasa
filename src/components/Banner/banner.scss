@@ -13,6 +13,9 @@
         bottom: -127%;
         height: auto;
         object-fit: cover;
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .banner_text {
         position: absolute;
