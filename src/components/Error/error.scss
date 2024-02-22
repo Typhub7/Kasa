@@ -7,7 +7,7 @@
     @media screen and (max-width: $breakpoint) {
         height: 879px;
     }
-    .error-number {
+    .error_number {
         color: $primary-color;
         font-size: 288px;
         margin: 0;
@@ -16,7 +16,7 @@
         }
 
     }
-    .error-text {
+    .error_text {
         color: $primary-color;
         font-size: 36px;
         margin: 0;
@@ -24,14 +24,11 @@
             font-size: 24px;
             width: 290px;
         }
+
         @media screen and (max-width: $breakpoint) {
             font-size: 18px;
             width: 260px;
         }
 
     }
-    .link {
-    text-decoration: underline;
-    }
-    
 }

@@ -1,5 +1,4 @@
 .navigation {
-    
     ul {
         display: flex;
         flex-direction: row;
@@ -16,18 +15,11 @@
 		padding-left: 3.5rem;
 		color: black;
 
-
 		@media screen and (max-width: $breakpoint) {
 		font-size: 12px ;
 		padding-left: 0.8rem;
         text-transform: uppercase;
 		}
-
-		&:hover,
-		&:focus {
-			text-decoration-line: underline;
-		}
-
 	}
 }
 

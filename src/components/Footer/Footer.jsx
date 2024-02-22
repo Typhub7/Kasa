@@ -3,9 +3,9 @@ import logo from "../../assets/LOGO-white.png";
 
 const Footer = () => {
     return (
-        <footer className="footer-container">
+        <footer className="footer_container">
 			<img src={logo} alt="logo blanc de kasa" className='logo'/>
-			<p className="footer-copyright">© 2020 Kasa. All rights reserved</p>
+			<p className="footer_copyright">© 2020 Kasa. All rights reserved</p>
 		</footer>
     );
 };

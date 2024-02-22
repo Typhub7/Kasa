@@ -6,16 +6,19 @@
     height: 233px;
     margin: 0 auto;
     overflow: hidden;
+    
+
     @include rounded-border-large;
     .banner_img {
         position: absolute;
         width: 100%;
-        bottom: -127%;
+        bottom: -290px;
         height: auto;
         object-fit: cover;
         background-blend-mode: darken;
         background-repeat: no-repeat;
         background-size: cover;
+        filter: brightness(50%);
     }
     .banner_text {
         position: absolute;

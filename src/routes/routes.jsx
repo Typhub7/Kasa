@@ -8,7 +8,7 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage';
 
 function routes() {
     const router = createBrowserRouter([
-      { path: "/", element: <Accueil />, errorElement: <ErrorPage />},
+        { path: "/", element: <Accueil />, errorElement: <ErrorPage />},
         { path: "/accueil", element: <Accueil />, errorElement: <ErrorPage />},
         { path: "/apropos", element: <Apropos />, errorElement: <ErrorPage />},
         { path: "/logement", element: <Logement />, errorElement: <ErrorPage />},

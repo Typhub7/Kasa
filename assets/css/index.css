@@ -14,7 +14,40 @@ ul, li {
 }
 
 /*Variable*/
+.active-link {
+  text-decoration-line: underline;
+}
+
 /*Border radius*/
+.footer_container {
+  width: 100%;
+  height: 209px;
+  padding-top: 66px;
+  padding-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+@media screen and (max-width: 600px) {
+  .footer_container {
+    min-width: 320px;
+    margin: 66px auto 58px;
+  }
+}
+.footer_container .logo {
+  width: 122px;
+}
+.footer_container .footer_copyright {
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .footer_container .footer_copyright {
+    width: 133px;
+  }
+}
+
 .navigation ul {
   display: flex;
   flex-direction: row;
@@ -37,11 +70,6 @@ ul, li {
     padding-left: 0.8rem;
     text-transform: uppercase;
   }
-}
-.navigation .link-accueil:hover, .navigation .link-accueil:focus,
-.navigation .link-apropos:hover,
-.navigation .link-apropos:focus {
-  text-decoration-line: underline;
 }
 
 .header {
@@ -80,10 +108,14 @@ ul, li {
 .banner_container .banner_img {
   position: absolute;
   width: 100%;
-  bottom: -127%;
+  bottom: -290px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
 }
 .banner_container .banner_text {
   position: absolute;
@@ -93,6 +125,49 @@ ul, li {
   font-size: 48px;
   margin: 0;
   white-space: nowrap;
-  text-shadow: 0px_4px_4px_rgba 0, 0, 0, 0.25;
   color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px;
+  -moz-text-stroke: 1px; /* Pour Firefox */
+  -webkit-text-stroke-color: black;
+}
+
+.error {
+  height: 1173px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .error {
+    height: 879px;
+  }
+}
+.error .error_number {
+  color: #FF6060;
+  font-size: 288px;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .error .error_number {
+    font-size: 96px;
+  }
+}
+.error .error_text {
+  color: #FF6060;
+  font-size: 36px;
+  margin: 0;
+}
+@media screen and (max-width: 900px) {
+  .error .error_text {
+    font-size: 24px;
+    width: 290px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .error .error_text {
+    font-size: 18px;
+    width: 260px;
+  }
 }/*# sourceMappingURL=index.css.map */
