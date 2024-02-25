@@ -1,35 +1,18 @@
 import React from 'react';
 import Card from '../../components/Card/Card';
-import logements from '../src/mock/logements.json';
+import logements from '../../mock/logements.json';
 
 
-const MultiCards = ({cover, title}) => {
+const MultiCards = () => {
     return (
         <div className='cards'>
-            <Card
-                image={cover}
-                title={title}
+            {logements.map((logement, index) => (
+                <Card
+                    key={index}
+                    image={logement.cover}
+                    title={logement.title}
                 />
-            <Card
-                image={cover}
-                title={title}
-            />
-            <Card
-                image={cover}
-                title={title}
-                />
-            <Card
-                image={cover}
-                title={title}
-            />
-            <Card
-                image={cover}
-                title={title}
-                />
-            <Card
-                image={cover}
-                title={title}
-            />
+            ))}
         </div>
     );
 };

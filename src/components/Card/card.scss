@@ -14,10 +14,14 @@
     height: 340px;
     background-color: $primary-color;
     @include rounded-border-medium;
+    object-fit: cover;
+    filter: brightness(70%);
 }
 
 .card_title {
     position: absolute;
     bottom: 25px;
     left: 25px;
+    color: white;
+    font-size: 18px;
 }
