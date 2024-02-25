@@ -3,12 +3,12 @@ import arrow from '../../assets/arrow_back.png'
 
 const Collapse = ({title,contain, className}) => {
     const [open, setOpen] = useState(false);
-    const toggle = () => {
+    const toggleCollapse = () => {
         setOpen(!open)
     } 
   return (
     <div className="collapse_container">
-      <button onClick={toggle} className="collapse_button">
+      <button onClick={toggleCollapse} className="collapse_button">
         <p className="collapse_title">{title}</p>
         <img
           className={!open ? 'arrow' : 'arrow arrow_down'}
@@ -17,8 +17,8 @@ const Collapse = ({title,contain, className}) => {
         />
       </button>
       {open && (
-        <div className={className}>
-          <h4>{contain}</h4>
+        <div className={className} >
+          <h4 className="text_info">{contain}</h4>
         </div>
       )}
     </div>

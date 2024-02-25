@@ -1,0 +1,23 @@
+.card_container {
+    position: relative;
+    margin: auto;
+    width: 365px;
+    height: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-card;
+}
+
+.card_image {
+    width: 340px;
+    height: 340px;
+    background-color: $primary-color;
+    @include rounded-border-medium;
+}
+
+.card_title {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}

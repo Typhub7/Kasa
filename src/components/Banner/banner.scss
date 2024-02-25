@@ -6,6 +6,11 @@
     height: 233px;
     margin: 0 auto;
     overflow: hidden;
+    @media screen and (max-width: 1200px) {
+        width : 80vw;
+        min-width: 335px;
+        height: 111px;
+    }
     
 
     @include rounded-border-large;
@@ -15,10 +20,19 @@
         bottom: -290px;
         height: auto;
         object-fit: cover;
-        background-blend-mode: darken;
-        background-repeat: no-repeat;
-        background-size: cover;
         filter: brightness(50%);
+        @media screen and (max-width: 1200px) {
+            width : 80vw;
+            min-width: 335px;
+            bottom: -150px;
+        }
+        @media screen and (max-width: 900px) {
+            width : 80vw;
+            min-width: 335px;
+            bottom: -65px;
+            filter: brightness(70%);
+        }
+
     }
     .banner_text {
         position: absolute;
@@ -29,6 +43,15 @@
         margin: 0;
         white-space: nowrap;
         @include text-shadow-stroke;
-
+    }
+    .text-outline {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white; /* Rend le texte de contour invisible */
+        transform: translate(-50%, -50%); /* Centrer le texte horizontalement et verticalement */
+        font-size: 48px;
+        margin: 0;
+        white-space: nowrap;
     }
 }
