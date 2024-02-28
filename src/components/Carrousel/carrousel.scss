@@ -1,0 +1,30 @@
+.arrow {
+    background-color: black;
+    width: 110px;
+    height: 90px;
+
+}
+
+.arrow_right {
+    rotate: 90deg;
+}
+
+.arrow_left {
+    rotate: 270deg;
+}
+
+.slider-container  {
+    position :relative;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1240px;
+    height: 415px;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
