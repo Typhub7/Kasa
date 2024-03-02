@@ -8,4 +8,13 @@
     margin-top: 19px;
     margin-bottom: 19px;
     }
+    .fiabilite_container,
+    .respect_container,
+    .service_container,
+    .securite_container {
+    max-width: 1023px;
+    .collapse_title {
+        font-size: 24px;
+    }
+}
 }

@@ -1,0 +1,13 @@
+.tag_container {
+    width: 115px;
+    height: 25px;
+    background-color: $primary-color;
+    @include rounded-border-medium;
+    display: flex;
+    align-items: center;
+}
+
+.tag_text {
+    font-size: 14px;
+    color: white;
+}

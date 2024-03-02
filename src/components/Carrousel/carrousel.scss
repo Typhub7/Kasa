@@ -1,30 +1,54 @@
-.arrow {
-    background-color: black;
-    width: 110px;
-    height: 90px;
-
-}
-
-.arrow_right {
-    rotate: 90deg;
-}
-
-.arrow_left {
-    rotate: 270deg;
-}
-
-.slider-container  {
-    position :relative;
+.carrousel_fullcontainer  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1240px;
+    height: 415px;
+    overflow: hidden;
+    @include rounded-border-large
 }
 .slide {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
     width: 1240px;
     height: 415px;
-    opacity: 0;
+    img {
+        width: 100%;
+        height: 100%;  
+        object-fit: cover;
+    }
+    .page_number {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        color: white;
+        font-size: 18px;
+    }
 }
 
 .active {
     opacity: 1;
 }
+
+.arrow {
+    width: 110px;
+    height: 90px;
+}
+
+.arrow_right {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    rotate: 90deg;
+}
+
+.arrow_left {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    rotate: 270deg;
+}
+

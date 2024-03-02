@@ -1,8 +1,8 @@
 .collapse_container {
     margin : 0 auto;
-    max-width: 1023px;
+    width: 100%;
     button {
-        width: 1023px;
+        width: 100%;
         background-color: $primary-color;
         display: flex;
         justify-content: space-between;
@@ -10,7 +10,6 @@
         @include rounded-border-small;
         padding: 10px 20px 10px 15px;
         .collapse_title {
-            font-size: 24px;
             font-weight: bold;
             color: white;
             line-height: 0;
@@ -49,4 +48,15 @@
     .arrow_down {
         rotate: 180deg;
     }
+}
+
+
+
+.description_container,
+.equipements_container {
+    max-width: 582px;   
+    .collapse_title {
+        font-size: 18px;
+    }
+    
 }

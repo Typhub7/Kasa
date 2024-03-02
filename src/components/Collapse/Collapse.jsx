@@ -7,7 +7,7 @@ const Collapse = ({title,contain, className}) => {
         setOpen(!open)
     } 
   return (
-    <div className="collapse_container">
+    <div className={`collapse_container ${className}`}>
       <button onClick={toggleCollapse} className="collapse_button">
         <p className="collapse_title">{title}</p>
         <img
@@ -17,9 +17,18 @@ const Collapse = ({title,contain, className}) => {
         />
       </button>
       {open && (
-        <div className={className} >
-          <h4 className="text_info">{contain}</h4>
-        </div>
+        <h4 className="text_info">
+          {typeof contain === 'object' ? (
+            <ul>
+              {Object.keys(contain).map((key, index) => (
+                <li key={index}>
+                  {contain[key]}
+                </li>
+              ))}
+            </ul>
+            ) : (
+                <p>{contain}</p>
+        )}</h4> 
       )}
     </div>
   );
