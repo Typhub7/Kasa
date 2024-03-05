@@ -5,6 +5,9 @@ import Carrousel from '../../components/Carrousel/Carrousel';
 import { useParams } from 'react-router-dom';
 import logements from '../../mock/logements.json';
 import Collapse from '../../components/Collapse/Collapse';
+import Tag from '../../components/Tag/Tag';
+import Stars from '../../components/Stars/Stars';
+
 
 
 const Logement = () => {
@@ -23,6 +26,16 @@ const Logement = () => {
                 <Carrousel pictures={logement.pictures} />
                 <h2>{logement.title}</h2>
                 <h3>{logement.location}</h3>
+                <div className='tagsAndStars'>
+                    <div className="tags_container">
+                        {logement.tags.map(tag => (
+                            <Tag key={tag} tag={tag} />
+                        ))}
+                    </div>
+                    <div className='stars_container'>
+                        <Stars rating={logement.rating} />
+                    </div>
+                </div>
                 <div className='collapsemenu_container'>
                     <Collapse
                     title="Description"
@@ -35,6 +48,7 @@ const Logement = () => {
                     className="equipements_container"
                     />
                 </div>
+                
             </div>
             <Footer />
         </div>

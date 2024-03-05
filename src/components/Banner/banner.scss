@@ -43,6 +43,12 @@
         margin: 0;
         white-space: nowrap;
         @include text-shadow-stroke;
+        @media screen and (max-width: 900px) {
+            font-size: 24px;
+            word-wrap: break-word;
+            width : 225px;
+            white-space: normal;
+        }
     }
     .text-outline {
         position: absolute;
@@ -53,5 +59,11 @@
         font-size: 48px;
         margin: 0;
         white-space: nowrap;
+        @media screen and (max-width: 900px) {
+            font-size: 24px;
+            word-wrap: break-word; 
+            width : 225px;
+            white-space: normal;
+        }
     }
 }

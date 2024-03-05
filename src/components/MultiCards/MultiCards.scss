@@ -11,4 +11,15 @@
     flex-wrap: wrap;
     align-content: flex-start;
     @include rounded-border-medium;
+    @media screen and (max-width: 1260px) {
+        width: 850px;
+    }
+    @media screen and (max-width: 900px) {
+        width: 375px;
+        flex-direction: column;
+        background-color: white;
+        padding: 0;
+        gap: 10px;
+        margin: 22px auto 22px;
+    }
 }

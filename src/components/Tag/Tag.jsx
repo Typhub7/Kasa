@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Tag = (logementProps) => {
+const Tag = (tags) => {
     return (
         <div className="tag_container">
-			<span className="tag_text">{logementProps.tag}</span>
+			<span className="tag_text">{tags.tag}</span>
 		</div>
     );
 };
