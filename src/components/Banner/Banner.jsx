@@ -1,5 +1,13 @@
 import React from 'react';
 
+/** Composant de bannière affichant un titre et un fond au format image.
+ * 
+ * @param {Object} props - Les propriétés du composant.
+ * @param {string} props.title - Le titre de la bannière.
+ * @param {string} props.image - L'URL de l'image de la bannière.
+ * @returns {JSX.Element} Le composant de bannière.
+ */
+
 const Banner = ({ title, image }) => {
     return (
         <div className="banner_container">

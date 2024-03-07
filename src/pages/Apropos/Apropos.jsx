@@ -5,6 +5,10 @@ import Footer from '../../components/Footer/Footer';
 import MultiCollapse from '../../components/MultiCollapse/Multicollapse';
 import image from "../../assets/Background-img-apropos.png";
 
+/** Page À propos affichant des informations sur le site.
+ * 
+ * @returns {JSX.Element} Le composant de la page À propos.
+ */
 const Apropos = () => {
     return (
         <div>

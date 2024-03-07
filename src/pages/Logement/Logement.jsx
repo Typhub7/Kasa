@@ -9,11 +9,16 @@ import Tag from '../../components/Tag/Tag';
 import Stars from '../../components/Stars/Stars';
 import Contact from '../../components/Contact/Contact';
 
+/** Page affichant les détails d'un logement.
+ * 
+ * @returns {JSX.Element} Le composant de la page de détails du logement.
+ */
 const Logement = () => {
     const { id } = useParams()
     const logement = logements.find(item => item.id === id)
     const navigate = useNavigate();
 
+    // Vérifie si le logement existe, sinon redirige vers la page d'erreur
     if (!logement) {
         navigate('/erreur404');
     }
