@@ -24,29 +24,46 @@
     }
 
     .text_info {
-            font-weight: normal;
-            padding: 20px;
-            background-color: $bg-card;
-            margin-top: 0;
-            margin-bottom: 0;
-            @include rounded-border-medium;
-            & ul {
-                margin : 0;
-                padding : 10px 0 0 0;
-            }
-            @media screen and (max-width: $breakpointdesktop) {
-                font-size: 12px;
-            }
+        font-weight: normal;
+        background-color: $bg-card;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 20px 0 20px;
+
+        @include rounded-border-medium;
+        
+        & ul {
+            margin : 0;
+            padding : 10px 0 0 0;
         }
+        @media screen and (max-width: $breakpointdesktop) {
+            font-size: 12px;
+        }
+    }
 
     .arrow {
         width: 32px;
         height: 32px;
-
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
     }
 
     .arrow_down {
-        rotate: 180deg;
+        transform: rotate(180deg);
+    }
+    .text_info {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.2s ease-in-out,max-height 0.5s ease, padding 0.3s ease;; /* Ajoute une transition de 0.5 secondes */
+    }
+    
+    .text_info.deplie {
+        opacity: 1;
+        padding-top: 20px;
+        height: auto;
+        max-height: 600px; /* Vous pouvez ajuster cette valeur en fonction de votre contenu */
+        transition: opacity 0.2s ease-in-out, max-height 0.5s ease,  padding 0.3s ease;;
     }
 }
 

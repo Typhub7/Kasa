@@ -29,8 +29,8 @@ const Collapse = ({title,contain, className}) => {
         />
       </button>
       {/* Affiche le contenu si le collapsible est ouvert */}
-      {open && (
-        <h4 className="text_info">
+      {/*{open && (*/}
+        <h4 className={`text_info ${open ? 'deplie' : ''} `}>
           {/* Si le contenu est un objet, affiche une liste d'éléments, sinon affiche simplement le contenu */}
           {typeof contain === 'object' ? (
             <ul>
@@ -43,7 +43,7 @@ const Collapse = ({title,contain, className}) => {
             ) : (
                 <p>{contain}</p>
         )}</h4> 
-      )}
+      {/*)}*/ }
     </div>
   );
 }
