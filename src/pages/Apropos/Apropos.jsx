@@ -3,8 +3,6 @@ import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';
 import Footer from '../../components/Footer/Footer';
 import MultiCollapse from '../../components/MultiCollapse/Multicollapse';
-
-
 import image from "../../assets/Background-img-apropos.png";
 
 const Apropos = () => {
@@ -15,8 +13,7 @@ const Apropos = () => {
                 title=""
                 image={image}
                 className="banner_container"
-            />
-            
+            />            
             <MultiCollapse />
             <Footer />
         </div>

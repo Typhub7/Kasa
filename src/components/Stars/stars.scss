@@ -1,5 +1,5 @@
 .star {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $breakpointtablet) {
     height: 18px;
     }
 }

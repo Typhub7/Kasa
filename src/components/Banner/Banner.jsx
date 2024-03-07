@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Banner = ({ title, image }) => {
     return (
         <div className="banner_container">

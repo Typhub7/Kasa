@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import logements from '../../mock/logements.json';
 
 const MultiCards = () => {   
-   
     return (
         <div className='cards'>
             {logements.map((logement) => (

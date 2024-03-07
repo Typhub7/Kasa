@@ -5,7 +5,7 @@
 	justify-content: space-between;
 	align-items: center;
 	
-	@media screen and (max-width: $breakpoint) {
+	@media screen and (max-width: $breakpointmobile) {
 		min-width: 320px;
 		margin-top: 20px;
 		margin-bottom: 27px;
@@ -14,7 +14,7 @@
 	}
 	.logo {
 	width: 210px;
-	@media screen and (max-width: $breakpoint) {
+	@media screen and (max-width: $breakpointmobile) {
 		width: 145px;
 	}
 	}

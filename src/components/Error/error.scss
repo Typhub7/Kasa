@@ -4,31 +4,29 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    @media screen and (max-width: $breakpoint) {
+    @media screen and (max-width: $breakpointmobile) {
         height: 879px;
     }
     .error_number {
         color: $primary-color;
         font-size: 288px;
         margin: 0;
-        @media screen and (max-width: $breakpoint) {
+        @media screen and (max-width: $breakpointmobile) {
             font-size: 96px;
         }
-
     }
     .error_text {
         color: $primary-color;
         font-size: 36px;
         margin: 0;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $breakpointtablet) {
             font-size: 24px;
             width: 290px;
         }
 
-        @media screen and (max-width: $breakpoint) {
+        @media screen and (max-width: $breakpointmobile) {
             font-size: 18px;
             width: 260px;
         }
-
     }
 }

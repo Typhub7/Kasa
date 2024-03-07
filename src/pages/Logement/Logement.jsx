@@ -9,8 +9,6 @@ import Tag from '../../components/Tag/Tag';
 import Stars from '../../components/Stars/Stars';
 import Contact from '../../components/Contact/Contact';
 
-
-
 const Logement = () => {
     const { id } = useParams()
     const logement = logements.find(item => item.id === id)
@@ -55,8 +53,7 @@ const Logement = () => {
                     contain={logement.equipments}
                     className="equipements_container"
                     />
-                </div>
-                
+                </div>  
             </div>
             <Footer />
         </div>

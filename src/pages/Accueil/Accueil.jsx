@@ -5,9 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import image from "../../assets/Background-img-accueil.png";
 import MultiCards from '../../components/MultiCards/MultiCards';
 
-
 const Accueil = () => {
-    
     return (
         <div className='accueil_container'>
             <Header />

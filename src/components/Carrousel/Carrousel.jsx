@@ -6,11 +6,11 @@ const Carrousel = ({pictures}) => {
 
     const nextImage = () => {
         setCurrentImage((lastImage) => (lastImage === pictures.length - 1 ? 0 : lastImage + 1));
-      };
+    };
     
-      const previousImage = () => {
+    const previousImage = () => {
         setCurrentImage((lastImage) => (lastImage === 0 ? pictures.length - 1 : lastImage - 1));
-      };
+    };
 
       const showArrowsAndCounter = pictures.length > 1
     return (

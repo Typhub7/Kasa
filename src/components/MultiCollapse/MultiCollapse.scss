@@ -1,41 +1,36 @@
 .multicollapse_container {
-    width: 1240px;
-    
+    width: 1240px;  
     display: flex;
     flex-direction: column;
     align-items: center;
     gap : 20px;
     margin : 40px auto 40px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $breakpointdesktop) {
         margin : 19px auto 19px;
         width: 750px;
-        
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $breakpointtablet) {
         margin : 19px auto 19px;
-        width: 335px;
-        
+        width: 335px;       
     }
+    
     .fiabilite_container,
     .respect_container,
     .service_container,
-    .securite_container {
-     
+    .securite_container {  
         .collapse_title {
             font-size: 24px;
-            @media screen and (max-width: 1200px) {
+            @media screen and (max-width: $breakpointdesktop) {
                 font-size: 13px;
             }
         }
-
         .text_info {
             font-size: 18px;
-            @media screen and (max-width: 1200px) {
+            @media screen and (max-width: $breakpointdesktop) {
                 font-size: 12px;
             }
-
         }
     }
 }

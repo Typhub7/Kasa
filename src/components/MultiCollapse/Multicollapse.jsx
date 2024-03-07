@@ -2,7 +2,6 @@ import React from 'react';
 import Collapse from '../Collapse/Collapse';
 import collapsesData from '../../data/collapsesData';
 
-
 const MultiCollapse = () => {
   return (
     <div className='multicollapse_container'>

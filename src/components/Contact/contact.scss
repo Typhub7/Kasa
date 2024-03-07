@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .host_picture{
@@ -17,7 +16,7 @@
         object-fit: cover;
         background-color: $bg-photo;
     }
-    @media screen and (max-width: $breakpoint) {
+    @media screen and (max-width: $breakpointmobile) {
         width: 32px;
         height: 32px;
     }
@@ -29,7 +28,7 @@
     font-size: 18px;
     width: 89px;
 	height: 40px;
-    @media screen and (max-width: $breakpoint) {
+    @media screen and (max-width: $breakpointmobile) {
         font-size: 12px;
         width: 75px;
 	    height: 32px;

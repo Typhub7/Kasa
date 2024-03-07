@@ -8,6 +8,7 @@
     overflow: hidden;
     @include rounded-border-large
 }
+
 .slide {
     position: absolute;
     top: 0;
@@ -26,7 +27,7 @@
         left: 50%;
         color: white;
         font-size: 18px;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $breakpointtablet) {
             opacity: 0;
             z-index: -1; 
         }
@@ -40,7 +41,7 @@
 .arrow {
     width: 46px;
     height: 80px;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $breakpointtablet) {
         width: 16px;
         height: 24px;
     }
@@ -51,7 +52,7 @@
     top: 150px;
     right: 20px;
     rotate: 180deg;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $breakpointtablet) {
         right: 10px;
         top: 110px;   
     }
@@ -61,7 +62,7 @@
     position: absolute;
     top: 150px;
     left: 20px;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $breakpointtablet) {
         top: 110px;
         left: 10px; 
     }

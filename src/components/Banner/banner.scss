@@ -6,13 +6,12 @@
     height: 233px;
     margin: 0 auto;
     overflow: hidden;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $breakpointdesktop) {
         width : 80vw;
         min-width: 335px;
         height: 111px;
     }
     
-
     @include rounded-border-large;
     .banner_img {
         position: absolute;
@@ -21,18 +20,17 @@
         height: auto;
         object-fit: cover;
         filter: brightness(50%);
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: $breakpointdesktop) {
             width : 80vw;
             min-width: 335px;
             bottom: -150px;
         }
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $breakpointtablet) {
             width : 80vw;
             min-width: 335px;
             bottom: -65px;
             filter: brightness(70%);
         }
-
     }
     .banner_text {
         position: absolute;
@@ -43,7 +41,7 @@
         margin: 0;
         white-space: nowrap;
         @include text-shadow-stroke;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $breakpointtablet) {
             font-size: 24px;
             word-wrap: break-word;
             width : 225px;
@@ -59,7 +57,7 @@
         font-size: 48px;
         margin: 0;
         white-space: nowrap;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $breakpointtablet) {
             font-size: 24px;
             word-wrap: break-word; 
             width : 225px;
