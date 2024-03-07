@@ -23,3 +23,9 @@
         margin: 22px auto 22px;
     }
 }
+
+.cards::after {
+    content: '';
+    width: 365px;
+    }
+

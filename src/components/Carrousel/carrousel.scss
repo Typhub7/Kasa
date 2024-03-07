@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1240px;
-    height: 415px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     @include rounded-border-large
 }
@@ -13,8 +13,8 @@
     top: 0;
     left: 0;
     opacity: 0;
-    width: 1240px;
-    height: 415px;
+    width: 100%;
+    height: 100%;
     img {
         width: 100%;
         height: 100%;  
@@ -26,6 +26,10 @@
         left: 50%;
         color: white;
         font-size: 18px;
+        @media screen and (max-width: 900px) {
+            opacity: 0;
+            z-index: -1; 
+        }
     }
 }
 
@@ -34,21 +38,32 @@
 }
 
 .arrow {
-    width: 110px;
-    height: 90px;
+    width: 46px;
+    height: 80px;
+    @media screen and (max-width: 900px) {
+        width: 16px;
+        height: 24px;
+    }
 }
 
 .arrow_right {
     position: absolute;
     top: 150px;
-    right: 0;
-    rotate: 90deg;
+    right: 20px;
+    rotate: 180deg;
+    @media screen and (max-width: 900px) {
+        right: 10px;
+        top: 110px;   
+    }
 }
 
 .arrow_left {
     position: absolute;
     top: 150px;
-    left: 0;
-    rotate: 270deg;
+    left: 20px;
+    @media screen and (max-width: 900px) {
+        top: 110px;
+        left: 10px; 
+    }
 }
 

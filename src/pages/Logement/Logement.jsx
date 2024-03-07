@@ -2,38 +2,46 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Carrousel from '../../components/Carrousel/Carrousel';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import logements from '../../mock/logements.json';
 import Collapse from '../../components/Collapse/Collapse';
 import Tag from '../../components/Tag/Tag';
 import Stars from '../../components/Stars/Stars';
+import Contact from '../../components/Contact/Contact';
 
 
 
 const Logement = () => {
     const { id } = useParams()
     const logement = logements.find(item => item.id === id)
+    const navigate = useNavigate();
 
     if (!logement) {
-        return (
-            <><Header /><div>Logement non trouvé</div><Footer /></>)
+        navigate('/erreur404');
     }
 
     return (
         <div>            
             <Header />
             <div className='logeinfo_container'>
-                <Carrousel pictures={logement.pictures} />
-                <h2>{logement.title}</h2>
-                <h3>{logement.location}</h3>
-                <div className='tagsAndStars'>
-                    <div className="tags_container">
-                        {logement.tags.map(tag => (
-                            <Tag key={tag} tag={tag} />
-                        ))}
-                    </div>
-                    <div className='stars_container'>
-                        <Stars rating={logement.rating} />
+                <div className='carrousel_contain'>
+                    <Carrousel pictures={logement.pictures} />
+                </div>
+                <div className='logement_info'>
+                    <div className='titlesAndTag'>
+                        <h3>{logement.title}</h3>
+                        <h2>{logement.location}</h2>
+                        <div className="tags_container">
+                            {logement.tags.map(tag => (
+                                <Tag key={tag} tag={tag} />
+                            ))}
+                        </div>
+                    </div>               
+                    <div className='contactAndStars'>
+                        <Contact host={logement.host}/>
+                        <div className='stars_container'>
+                            <Stars rating={logement.rating} />
+                        </div>
                     </div>
                 </div>
                 <div className='collapsemenu_container'>

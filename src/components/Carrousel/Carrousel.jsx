@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import arrow from '../../assets/arrow_back.png'
+import arrow from '../../assets/arrow_left.png'
 
 const Carrousel = ({pictures}) => {
     const [currentImage, setCurrentImage] = useState(0);

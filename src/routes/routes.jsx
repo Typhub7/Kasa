@@ -13,6 +13,7 @@ function routes() {
         { path: "/accueil", element: <Accueil />, errorElement: <ErrorPage />},
         { path: "/apropos", element: <Apropos />, errorElement: <ErrorPage />},
         { path: "/logement/:id", element: <Logement logements={logements} />, errorElement: <ErrorPage />},
+        { path: "erreur404", element: <ErrorPage />} , // En cas de saisie erronée de l'Id du logement
         { path: "*", element: <ErrorPage />} // En cas de saisie erronée de l'adresse on bascule sur la page d'erreur    
       ])
       
