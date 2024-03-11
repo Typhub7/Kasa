@@ -9,10 +9,11 @@
     background-color: $bg-card;
     @media screen and (max-width: $breakpointtablet) {
         background-color: white;
-        @media screen and (max-width: $breakpointtablet) {
-            width: 365px;
-            height: 260px;
-        }
+        width: 365px;
+        height: 260px;  
+    }
+    @media screen and (max-width: $breakpointmobile) {
+        width: 335px;
     }
 }
 

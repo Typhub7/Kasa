@@ -19,7 +19,7 @@ const Apropos = () => {
                 className="banner_container"
             />            
             <MultiCollapse />
-            <Footer />
+            <Footer />  
         </div>
     );
 };

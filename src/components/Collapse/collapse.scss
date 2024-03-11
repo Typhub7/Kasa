@@ -55,15 +55,16 @@
         opacity: 0;
         max-height: 0;
         overflow: hidden;
-        transition: opacity 0.2s ease-in-out,max-height 0.5s ease, padding 0.3s ease;; /* Ajoute une transition de 0.5 secondes */
+        transition: opacity 0.6s ease-in-out 0.5s, padding 0.8s ease 0.3s, max-height 0.8s ease; 
     }
     
     .text_info.deplie {
         opacity: 1;
-        padding-top: 20px;
-        height: auto;
-        max-height: 600px; /* Vous pouvez ajuster cette valeur en fonction de votre contenu */
-        transition: opacity 0.2s ease-in-out, max-height 0.5s ease,  padding 0.3s ease;;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 80%;
+        max-height: 700px; 
+        transition: opacity 0.5s ease-in-out 0.2s, max-height 1s ease-in-out,  padding 0.5s ease-in-out;
     }
 }
 
@@ -74,9 +75,7 @@
     .collapse_title {
         font-size: 18px;
     }
-    & h4 {
-        height: 80%; 
-    }
+
     @media screen and (max-width: $breakpointdesktop) {
         max-width: 420px;
     }

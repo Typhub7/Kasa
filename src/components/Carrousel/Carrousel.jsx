@@ -4,7 +4,7 @@ import arrow from '../../assets/arrow_left.png'
 /**Composant de carrousel affichant une série d'images avec des flèches de navigation.
  * 
  * @param {Object} props - Les propriétés du composant.
- * @param {string[]} props.pictures - Les URLs des images à afficher dans le carrousel.
+ * @param {string[]} props.pictures - Un tableau contenant les URLs des images à afficher dans le carrousel.
  * @returns {JSX.Element} Le composant de carrousel.
  */
 

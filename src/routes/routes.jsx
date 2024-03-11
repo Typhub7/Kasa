@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider,} from "react-router-dom";
+import { createHashRouter, RouterProvider,} from "react-router-dom";
 import Accueil from '../pages/Accueil/Accueil';
 import Apropos from '../pages/Apropos/Apropos';
 import Logement from '../pages/Logement/Logement';
@@ -11,7 +11,7 @@ import logements from '../mock/logements.json';
  */
 function routes() {
   // Crée un BrowserRouter avec les routes spécifiées
-  const router = createBrowserRouter([
+  const router = createHashRouter([
       { path: "/", element: <Accueil />, errorElement: <ErrorPage />},
       { path: "/accueil", element: <Accueil />, errorElement: <ErrorPage />},
       { path: "/apropos", element: <Apropos />, errorElement: <ErrorPage />},
