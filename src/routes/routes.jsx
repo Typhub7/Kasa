@@ -10,7 +10,7 @@ import logements from '../mock/logements.json';
 /** Fonction pour définir les routes de l'application.
  */
 function routes() {
-  // Crée un BrowserRouter avec les routes spécifiées
+  // Crée un BrowserRouter avec les routes spécifiées - modifié en HashRouter pour compatibilité Gh-Page
   const router = createHashRouter([
       { path: "/", element: <Accueil />, errorElement: <ErrorPage />},
       { path: "/accueil", element: <Accueil />, errorElement: <ErrorPage />},
