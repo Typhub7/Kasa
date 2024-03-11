@@ -5,6 +5,11 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+/* Force l'affichage permanent de la barre de défilement verticale pour eviter un effet de décallage au moment de collapse*/
+body {
+    overflow-y: scroll; 
+}
+
 /*Default Value*/
 a {
     text-decoration: none;

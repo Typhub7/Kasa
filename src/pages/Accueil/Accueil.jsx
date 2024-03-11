@@ -20,7 +20,6 @@ const Accueil = () => {
                 className="banner_container"
             />
             <MultiCards/>
-            
             <Footer />
         </div>
     );
