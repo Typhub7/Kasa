@@ -18,7 +18,7 @@ const Collapse = ({title,contain, className}) => {
         setOpen(!open)
     } 
   return (
-    <div className={`collapse_container ${className}`}>
+    <div className={`collapse_container ${className} ${open ? 'ouvert' : ''}`}>
       <button onClick={toggleCollapse} className="collapse_button">
         <p className="collapse_title">{title}</p>
         {/* Affiche une flèche vers le bas si le collapsible est ouvert, sinon une flèche vers le haut */}
@@ -29,21 +29,20 @@ const Collapse = ({title,contain, className}) => {
         />
       </button>
       {/* Affiche le contenu si le collapsible est ouvert */}
-      {/*{open && (*/}
-        <h4 className={`text_info ${open ? 'deplie' : ''} `}>
-          {/* Si le contenu est un objet, affiche une liste d'éléments, sinon affiche simplement le contenu */}
-          {typeof contain === 'object' ? (
-            <ul>
-              {Object.keys(contain).map((key, index) => (
-                <li key={index}>
-                  {contain[key]}
-                </li>
-              ))}
-            </ul>
-            ) : (
-                <p>{contain}</p>
-        )}</h4> 
-      {/*)}*/ }
+      <h4 className={`text_info ${open ? 'deplie' : ''} `}>
+        {/* Si le contenu est un objet, affiche une liste d'éléments, sinon affiche simplement le contenu */}
+        {typeof contain === 'object' ? (
+          <ul>
+            {Object.keys(contain).map((key, index) => (
+              <li key={index}>
+                {contain[key]}
+              </li>
+            ))}
+          </ul>
+          ) : (
+          <p>{contain}</p>
+        )}
+      </h4>  
     </div>
   );
 }

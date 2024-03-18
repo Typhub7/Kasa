@@ -24,7 +24,7 @@ ul, li {
 /*Variable*/
 $primary-color : #FF6060;
 $bg-card : #F6F6F6;
-$bg-photo :  #C4C4C4; // Should appear only if no avatar photo
+$bg-photo :  #C4C4C4; // Fond gris en l'absence de photo pour le loueur
 
 $breakpointmobile: 600px;
 $breakpointtablet:900px;
@@ -37,6 +37,5 @@ $mobile_min: 335px;
 }
 
 button {
-    border: none;
     border: none;
 }
