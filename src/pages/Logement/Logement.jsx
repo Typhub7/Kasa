@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useEffect }  from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Carrousel from '../../components/Carrousel/Carrousel';
@@ -18,10 +18,12 @@ const Logement = () => {
     const logement = logements.find(item => item.id === id)
     const navigate = useNavigate();
 
-    // Vérifie si le logement existe, sinon redirige vers la page d'erreur
-    if (!logement) {
-        navigate('/erreur404');
-    }
+    useEffect(() => {
+        // Vérifie si le logement existe, sinon redirige vers la page d'erreur
+        if (!logement) {
+            navigate('/erreur404');
+        }
+    }, [logement, navigate]);
 
     return (
         <div>            
